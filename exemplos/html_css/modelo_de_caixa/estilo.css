@@ -1,5 +1,11 @@
 .conteudo {
     border: 1px solid red;
-    padding-top: 10px;
-    width: 150px;
+    padding: 10px; /*o padding contabiliza ao tamanho total do elemento, ou seja, se o elemento tem 100px de largura e 10px de padding, ele terá 110px de largura*/
+
+
+}
+
+.conteudo2{
+    border: 1px solid red;
+    margin: 20px; /*o margin não contabiliza ao tamanho total do elemento, ou seja, se o elemento tem 100px de largura e 10px de margin, ele terá 100px de largura. A margem é o espaço entre os elementos*/ 
 }
