@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor e imagem de fundo</title>
+    <style type="text/css">
+        /*body{
+            background-color: red; utilizando somente o background é possive alterar cor e outras propriedades
+        }*/
+        .fundo-imagem{
+            background-image: url(/exemplos/css_I/yoshi.png);
+            background-repeat: no-repeat; /*define como a repetição irá se comportar: no-repeat - não se repete
+            repeat (padrao que se reete tanto na horizontal quanto na vertical
+            repeat-x - repete-se somente no eixo x (horizontal)
+            repeat-y - repete-se somente no eixo y (vertical)*/
+            background-attachment:fixed; /*define como a imagem se comporta em relação a pagina, fixed - mantem fixada
+            scroll - se move de acordo com a rolagem da pagina*/
+            background-position: center top; /*recebe dois valores: valor de x e valor de y. Neste caso
+            esta centralizado no topo ou tambem utiliza-se somente um valor se for um valor em comum (center center = somente center)
+            agora tud oss em uma unica linha:
+
+            background: blue url(imagem.png) no-repeat sccroll left top;
+            
+            
+            */
+        }
+    </style>
+</head>
+<body class="fundo-imagem">
+    
+</body>
+</html>

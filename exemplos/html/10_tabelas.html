@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <!--para criar uma tabela é necessario o uso das tags: table, tr(table row - linha da tabela), td(table data - dados/celulas da tabela),
+    podendo tambem utilizar a th(table header - que define o cabealho da tabela)-->
+    <table border="2" width="50%"> <!--border define a grossura da linha externa da tabela, porem deve ser feito no css. o width com porcentagem define 
+        o tamanho de acordo com a porcentagem da area total da pagina-->
+        <tr><!-- cada tr define uma linha da tabela-->
+            <th>Código</th><!--cada th define uma cédula de cabeçalho da tabela-->
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>001</td><!--Cada td define uma celula da linha(tr) da tabela -->
+            <td>Notebook</td>
+            <td>R$ 2.500,99</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Tablet</td>
+            <td>R$ 999,99</td>
+        </tr>
+        <tr>
+            <td rowspan="2">desconto</td><!--O rowspan define a quantidade de linhas a celula ira ocupar, nesse caso sao 2 -->
+            <td colspan="2">cupom1 -R$ 10</td><!--para alterar a extensao da coluna, utilizamos colspan e a quatidade de espaço
+             de colunas que a celula irá ocupar. Nesse caso ocupará o espaço de 2 colunas -->
+        </tr>
+        <tr>
+            <td colspan="2">cupom2 -R$ 12</td>
+        </tr>
+        <tr>
+            <td>total: </td>
+            <td colspan="2">R$ 3.478,98</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
