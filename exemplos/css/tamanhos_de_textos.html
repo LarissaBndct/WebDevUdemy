@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+
+        /*
+        tipos de tamanhos:
+        px - tamanho fixo
+        % - tamanho relativo
+        em - tamanho relativo ao container pai
+        */
+        div{
+            font-size: 60px;
+        }
+        .texto-px{
+            font-size: 30px;
+        }
+        .texto-porcentagem{
+            font-size: 600%;
+        }
+        .texto-em{
+            font-size: 2em;
+        }
+    </style>
+    <title>Tamanhos de textos</title>
+</head>
+<body>
+    <p class="texto-px">Conteúdo</p> <!--utilizando px-->
+    <p class="texto-porcentagem">Conteúdo</p> <!--utilizando %-->
+    <div>
+        <p>conteúdo</p>
+        <p class="texto-em">conteúdo</p><!--Relacionado ao container pai (nesse caso div)
+        div esta definido como 60 pixels entao 1em euquivale ao tamanho da div (60px) ao colocar 2em na class
+        o texto equivale a 2 vezes o tamanho do container pai (2x 60px = 2em) -->
+    </div>
+</body>
+</html>
